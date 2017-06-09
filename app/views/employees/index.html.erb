@@ -3,5 +3,5 @@
 <%= link_to "New employee", "/employees/new" %>
 
 <% @employees.each do |employee| %>
-  <h2><a href="/employees/<%= employee["id"] %>"><%= employee["full_name"] %></a></h2>
+  <h2><a href="/employees/<%= employee.id %>"><%= employee.full_name %></a></h2>
 <% end %>
